@@ -87,8 +87,6 @@ $ npm run build
 
 This will create a `dist-zipped/project.zip` file.
 
-Go to [https://bigFhash.xyz/sandbox/](https://bigFhash.xyz/sandbox/) and upload the `project.zip` file in there to see if it works properly.
-
 If your bigFunction does not work properly, you can iterate easily by updating your files, running `$ npm run build` again, and upload the zip file again.
 
 Finally, you can mint your bigFunction using the same `project.zip`file.

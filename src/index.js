@@ -30,3 +30,10 @@ container.innerText = `
   some pseudo random values: [ ${bigFrand()}, ${bigFrand()}, ${bigFrand()}, ${bigFrand()}, ${bigFrand()},... ]\n
 `
 document.body.prepend(container)
+
+window.bigFAttributes = {
+    r1: bigFrand(),
+    r2: bigFrand(),
+}
+
+window.bigFart();
