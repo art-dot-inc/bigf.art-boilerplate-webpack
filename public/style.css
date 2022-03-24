@@ -1,6 +1,9 @@
 body {
-  background-color: lightblue;
-
-  /* leave it to hide the scrollbars */
-  overflow: hidden;
+    /* background grid */
+    background-color: #eee;
+    background-image: linear-gradient(45deg, #dadada 25%, transparent 25%, transparent 75%, #dadada 75%, #dadada),linear-gradient(45deg, #dadada 25%, transparent 25%, transparent 75%, #dadada 75%, #dadada);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    /* leave it to hide the scrollbars */
+    overflow: hidden;
 }
