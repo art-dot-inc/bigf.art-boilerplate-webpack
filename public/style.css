@@ -6,4 +6,7 @@ body {
     background-position: 0 0, 15px 15px;
     /* leave it to hide the scrollbars */
     overflow: hidden;
+
+    margin:0px;
+    padding:0px;
 }
