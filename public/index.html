@@ -35,8 +35,7 @@
             return (t >>> 0) / 4294967296
         }
     }
-    var bigFrand = sfc32(...hashes);//
-    Math.random = bigFrand;//override math.random for other libs
+    var bigFrand = sfc32(...hashes);
 
     if(window.bigFart == undefined){
         console.log("not running in bigFart renderer")
@@ -44,21 +43,6 @@
             console.log("window.bigFart()",window.bigFAttributes)
         }
     }
-
-    function random(x1, x2) {
-      return bigFrand() * (x2 - x1) + x1;
-    }
-    function randomInteger(x1, x2) {
-      return Math.round(random(x1, x2));
-    }
-    function chance(value) {
-      return bigFrand() < value;
-    }
-    function chooseFrom(values) {
-      return values[Math.floor(bigFrand() * values.length)];
-    }
-
-
     </script>
 
     <link rel="stylesheet" href="./style.css">

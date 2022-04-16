@@ -2,6 +2,8 @@
 console.log(bigFhash)   // the 64 chars hex number fed to your algorithm
 console.log(bigFrand()) // deterministic PRNG function, use it instead of Math.random()
 
+window.bigFAttributes = {}
+
 // note about the bigFrand() function
 // when the "bigFhash" is always the same, it will generate the same sequence of
 // pseudo random numbers, always
@@ -21,6 +23,26 @@ console.log(bigFrand()) // deterministic PRNG function, use it instead of Math.r
 //   "Inverted": true
 // }
 // window.bigFart();
+
+
+
+//override math.random for other libs
+Math.random = bigFrand;
+
+
+function random(x1, x2) {
+  return bigFrand() * (x2 - x1) + x1;
+}
+function randomInteger(x1, x2) {
+  return Math.round(random(x1, x2));
+}
+function chance(value) {
+  return bigFrand() < value;
+}
+function chooseFrom(values) {
+  return values[Math.floor(bigFrand() * values.length)];
+}
+
 
 
 
