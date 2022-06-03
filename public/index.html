@@ -39,8 +39,12 @@
 
     if(window.bigFart == undefined){
         console.log("not running in bigFart renderer")
+        window.bigFartmode = "browser";
         window.bigFart = function(){
             console.log("window.bigFart()",window.bigFAttributes)
+        }
+        window.bigFartStartVideo = function(){
+            console.log("window.bigFartStartVideo()",window.bigFAttributes)
         }
     }
     </script>
