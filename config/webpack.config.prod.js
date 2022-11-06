@@ -5,6 +5,11 @@ const path = require("path")
 
 module.exports = {
   ...config,
+
+  optimization: {
+      minimize: false
+  },
+
   mode: "production",
   // add the zipper plugin to the list of plugins
   plugins: [
